@@ -4,5 +4,5 @@ module.exports = {
     loader: 'imgix', ///workaround to not optimize images for static exports
     path: '/'
   },
-  basePath: '/yuqi.liu/'
+  basePath: '/yuqi.liu'
 }
