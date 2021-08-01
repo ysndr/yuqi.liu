@@ -21,6 +21,10 @@ jobs:
       - name: Export static page
         run: npm run export
       - name: Deploy to Github Pages
+        if: success()
         uses: crazy-max/ghaction-github-pages@v2
         with:
+          target_branch: gh-pages
           build_dir: out
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
